@@ -6,6 +6,11 @@ export async function getAllStarships() {
 }
 
 export async function getStarship(idx) {
-  const res = await fetch(`${baseUrl}/starships/${idx}`)
+  // Extract the starship ID from the URL
+  const starshipId = idx.match(/\d+/g)[0]
+
+  // Make API request to get starship details
+  const res = await fetch(`${baseUrl}/starships/${starshipId}`)
+
   return res.json()
 }
