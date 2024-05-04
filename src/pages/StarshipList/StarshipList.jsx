@@ -14,7 +14,6 @@ const StarshipList = () => {
     const fetchStarshipList = async () => {
       // API CALL
       const starshipData = await getAllStarships()
-      console.log(starshipData.results)
       // Put the data in state
       setStarshipList(starshipData.results)
     }
@@ -25,7 +24,7 @@ const StarshipList = () => {
 
   return (
     <>
-      <h1 id="header" >Starships</h1>
+      <h1 id="header" >STARSHIP LIST</h1>
       <main className="starship-list">
         {starshipList.map((starship, idx) => 
           <div className="starship-card" key={idx}>

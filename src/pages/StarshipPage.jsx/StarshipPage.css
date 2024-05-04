@@ -1,0 +1,21 @@
+#header {
+  text-align: center;
+}
+
+.starship-details {
+  border: 1px solid aqua;
+  border-radius: 8px;
+  height: 10vh;
+  min-width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(15,17,31);
+  color: whitesmoke
+}
+
+.starship-details:hover {
+  border-color: rgb(226, 0, 0);
+  color: red;
+}
