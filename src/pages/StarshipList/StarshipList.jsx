@@ -1,6 +1,6 @@
 // npm modules
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 // services
 import { getAllStarships } from "../../services/sw-api"
@@ -28,7 +28,7 @@ const StarshipList = () => {
       <main className="starship-list">
         {starshipList.map((starship, idx) => 
           <div className="starship-card" key={idx}>
-            <Link to={`/starships/${starship[idx]}`}>{starship.name}</Link>
+            <NavLink to={`/starships/${starship.url.slice(32)}`}>{starship.name}</NavLink>
           </div>
         )}
       </main>
