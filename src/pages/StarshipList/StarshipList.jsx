@@ -27,9 +27,11 @@ const StarshipList = () => {
       <h1 id="header" >STARSHIP LIST</h1>
       <main className="starship-list">
         {starshipList.map((starship, idx) => 
-          <div className="starship-card" key={idx}>
-            <NavLink to={`/starships/${starship.url.slice(32)}`}>{starship.name}</NavLink>
-          </div>
+          <NavLink key={idx} to={`/starships/${starship.url.slice(32)}`}>
+            <div className="starship-card" >
+              {starship.name}
+            </div>
+          </NavLink>
         )}
       </main>
     </>
