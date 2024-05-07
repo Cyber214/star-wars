@@ -6,10 +6,10 @@ import NavBar from './components/NavBar/NavBar'
 import StarshipList from './pages/StarshipList/StarshipList'
 import StarshipPage from './pages/StarshipPage.jsx/StarshipPage'
 
+//css
 import './App.css'
 
 function App() {
-
   return (
     <>
       <NavBar />

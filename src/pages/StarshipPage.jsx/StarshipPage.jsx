@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom"
 
 // services
 import { getStarship } from "../../services/sw-api"
+
+//css
 import './StarshipPage.css'
 
 const StarshipPage = () => {

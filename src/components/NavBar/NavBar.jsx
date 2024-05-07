@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <header>
       <nav>
-      <img className='logo' src={resistance} alt="A 20-sided die" />
+      <img className='logo' src={resistance} alt="Starwars Resistance Logo" />
       <NavLink to='/starships'>STAR WARS STARSHIPS</NavLink>
       </nav>
     </header>
